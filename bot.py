@@ -50,7 +50,7 @@ async def check_subscription(user_id):
     async with client:
         for channel in channels:
             try:
-                chat_id = int(channel['channel_id'])
+                chat_id = channel['channel_id']
                 # Kanalga a'zo yoki yo'qligini tekshirish
                 try:
                     # Foydalanuvchini kanal ishtirokchilari orasidan izlaymiz

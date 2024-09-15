@@ -7,12 +7,6 @@ from aiogram.filters import CommandStart
 from aiogram.types import  Message, InlineKeyboardMarkup, InlineKeyboardButton, \
     CallbackQuery, ReplyKeyboardMarkup, KeyboardButton
 
-
-from telethon import TelegramClient
-from telethon.errors import UserNotParticipantError, ChatAdminRequiredError
-
-
-
 TOKEN = "7511166749:AAF08oX2S5yxA65-4HTQffSfPiXWVgd8VHs"
 ADMINS = [5541564692]
 
@@ -29,56 +23,25 @@ logging.basicConfig(level=logging.INFO, handlers=[
 user_states = {}
 
 
-
-# Telethon bilan bog'lanish uchun kerakli ma'lumotlar
-api_id = 26423080  # O'zingizning Telethon API ID
-api_hash = '7aa642ddb10bc2248967ac699a156b78'  # O'zingizning Telethon API Hash
-phone_number = '+998913281102'  # O'zingizning telefon raqamingiz
-
-# Telethon clientini yaratamiz
-client = TelegramClient('session_name', api_id, api_hash)
-
-# Kanallarga obuna holatini tekshiradigan funksiya
 async def check_subscription(user_id):
-    # Kanallar API dan kanallarni olish
     url = 'https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/channels/'  # Kanallar API manzili
+
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
             channels = await response.json()
 
-    # Foydalanuvchi obunasini tekshirish
-    async with client:
-        for channel in channels:
-            try:
-                chat_id = channel['channel_id']
-                # Kanalga a'zo yoki yo'qligini tekshirish
-                try:
-                    # Foydalanuvchini kanal ishtirokchilari orasidan izlaymiz
-                    participant = await client.get_permissions(chat_id, user_id)
-                    if not participant:
-                        return False
-                except UserNotParticipantError:
-                    # Foydalanuvchi kanalda emas
-                    return False
-                except ChatAdminRequiredError as e:
-                    logging.error(f"Kanal uchun admin huquqlari talab qilinmoqda: {e}")
-                    return False
-            except Exception as e:
-                logging.error(f"Error checking subscription for channel {channel['channel_id']}: {e}")
+    for channel in channels:
+        try:
+            chat_id = channel['channel_id']
+            chat_member = await bot.get_chat_member(chat_id=chat_id, user_id=user_id)
+            if chat_member.status in ['left', 'kicked']:
                 return False
 
-    # Foydalanuvchi barcha kanallarga a'zo bo'lsa True qaytariladi
+        except Exception as e:
+            logging.error(f"Error checking subscription for channel {channel['channel_id']}: {e}")
+            return False
     return True
 
-# Foydalanuvchini majburiy obuna qilish uchun tekshirish
-async def ensure_subscription_with_telethon(message: Message):
-    user_id = message.from_user.id
-
-    if not await check_subscription(user_id):
-        # Agar foydalanuvchi obuna bo'lmagan bo'lsa, obuna bo'lish uchun so'rov yuboriladi
-        await send_subscription_prompt(message)
-        return False  # Foydalanuvchi obuna emas
-    return True  # Foydalanuvchi obuna bo'lgan
 
 async def ensure_subscription(message: Message):
     user_id = message.from_user.id
@@ -88,6 +51,7 @@ async def ensure_subscription(message: Message):
         await send_subscription_prompt(message)
         return False  # Indicate that the user is not subscribed
     return True  # User is subscribed
+
 
 async def get_inline_keyboard_for_channels():
     url = 'https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/channels/'  # Kanallar API manzili
@@ -390,6 +354,7 @@ async def search_movie_by_code_handler(message: Message):
 
 async def main():
     await dp.start_polling(bot)
+
 
 
 if __name__ == "__main__":

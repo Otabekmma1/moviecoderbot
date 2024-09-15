@@ -1,0 +1,398 @@
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7511166749)
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error in check_subscription: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.event:Update id=217887237 is not handled. Duration 91031 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414864618033187841, ignoring
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot get entity by phone number as a bot (try using integer IDs, not strings)
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887238 is handled. Duration 18672 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414864806199882753, ignoring
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot get entity by phone number as a bot (try using integer IDs, not strings)
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887239 is handled. Duration 4390 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='BOT_METHOD_INVALID')
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot get entity by phone number as a bot (try using integer IDs, not strings)
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887240 is handled. Duration 3406 ms by bot id=7511166749
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 1.330486 seconds and try again... (tryings = 1, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 1.675141 seconds and try again... (tryings = 2, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 2.288544 seconds and try again... (tryings = 3, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 3.039204 seconds and try again... (tryings = 4, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 3.890297 seconds and try again... (tryings = 5, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.103802 seconds and try again... (tryings = 6, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.112226 seconds and try again... (tryings = 7, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.138621 seconds and try again... (tryings = 8, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.909064 seconds and try again... (tryings = 9, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.047716 seconds and try again... (tryings = 10, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.135677 seconds and try again... (tryings = 11, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.323833 seconds and try again... (tryings = 12, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.011057 seconds and try again... (tryings = 13, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.022830 seconds and try again... (tryings = 14, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.863319 seconds and try again... (tryings = 15, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.161737 seconds and try again... (tryings = 16, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.944192 seconds and try again... (tryings = 17, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.936141 seconds and try again... (tryings = 18, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.083082 seconds and try again... (tryings = 19, bot id = 7511166749)
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot get entity by phone number as a bot (try using integer IDs, not strings)
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887241 is handled. Duration 4781 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='BOT_METHOD_INVALID')
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot get entity by phone number as a bot (try using integer IDs, not strings)
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887242 is handled. Duration 3453 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414890111265828865, ignoring
+ERROR:root:Error checking subscription for channel -1002488020788: 'TelegramClient' object has no attribute 'get_chat_member'
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887243 is handled. Duration 4171 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414890523952605185, ignoring
+ERROR:root:Error checking subscription for channel -1002488020788: GetParticipantRequest.__init__() got an unexpected keyword argument 'user_id'
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887244 is handled. Duration 4250 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414890718271489025, ignoring
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:root:User otabek_mma1 already exists
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887245 is handled. Duration 8641 ms by bot id=7511166749
+INFO:aiogram.event:Update id=217887246 is not handled. Duration 14 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:root:User None successfully added via API.
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887247 is handled. Duration 9843 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887248 is handled. Duration 4093 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887249 is handled. Duration 4656 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='USER_NOT_PARTICIPANT')
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887250 is handled. Duration 4640 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='USER_NOT_PARTICIPANT')
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:root:User None already exists
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887251 is handled. Duration 7125 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887252 is handled. Duration 5014 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='USER_NOT_PARTICIPANT')
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887253 is handled. Duration 5250 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='USER_NOT_PARTICIPANT')
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887254 is handled. Duration 4859 ms by bot id=7511166749
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:Received error without parent request: RpcError(error_code=400, error_message='USER_NOT_PARTICIPANT')
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+INFO:aiogram.event:Update id=217887255 is handled. Duration 5687 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.event:Update id=217887256 is not handled. Duration 0 ms by bot id=7511166749
+ERROR:aiogram.event:Cause exception while process update id=217887256 by bot id=7511166749
+TypeError: check_subscription() missing 1 required positional argument: 'client'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\bot.py", line 191, in start
+    if not await ensure_subscription(message):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\bot.py", line 95, in ensure_subscription
+    if not await check_subscription(user_id):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: check_subscription() missing 1 required positional argument: 'client'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.event:Update id=217887257 is not handled. Duration 0 ms by bot id=7511166749
+ERROR:aiogram.event:Cause exception while process update id=217887257 by bot id=7511166749
+TypeError: check_subscription() missing 1 required positional argument: 'client'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\bot.py", line 183, in start
+    if not await ensure_subscription_with_telethon(message):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\moviecoderbot\bot.py", line 86, in ensure_subscription_with_telethon
+    if not await check_subscription(user_id):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: check_subscription() missing 1 required positional argument: 'client'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887258 is handled. Duration 4155 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error checking subscription for channel -1002488020788: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887259 is handled. Duration 4094 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error in check_subscription: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887260 is handled. Duration 2453 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error in check_subscription: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887261 is handled. Duration 2155 ms by bot id=7511166749
+ERROR:root:Error in check_subscription: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887262 is handled. Duration 1812 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:root:Error in check_subscription: Cannot send requests while disconnected
+INFO:aiogram.event:Update id=217887263 is handled. Duration 2938 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+INFO:telethon.network.mtprotosender:System clock is wrong, set time offset to -7090s
+WARNING:telethon.network.mtprotostate:Server resent the older message 7414898555570430977, ignoring
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:root:Checking subscription for channel: -1002477323800
+INFO:root:Checking subscription for channel: -1002155123541
+INFO:root:Checking subscription for channel: -1002419696199
+INFO:root:Checking subscription for channel: -1002287769696
+INFO:aiogram.event:Update id=217887264 is handled. Duration 4827 ms by bot id=7511166749
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:aiogram.event:Update id=217887265 is handled. Duration 3594 ms by bot id=7511166749
+INFO:aiogram.event:Update id=217887266 is not handled. Duration 0 ms by bot id=7511166749
+INFO:telethon.client.updates:Got difference for account updates
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:root:Checking subscription for channel: -1002477323800
+INFO:root:Checking subscription for channel: -1002155123541
+INFO:root:Checking subscription for channel: -1002419696199
+INFO:root:Checking subscription for channel: -1002287769696
+ERROR:root:Failed to delete previous inline message: Telegram server says - Bad Request: message to delete not found
+INFO:aiogram.event:Update id=217887267 is handled. Duration 5188 ms by bot id=7511166749
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:root:Checking subscription for channel: -1002477323800
+INFO:root:Checking subscription for channel: -1002155123541
+INFO:root:Checking subscription for channel: -1002419696199
+INFO:root:Checking subscription for channel: -1002287769696
+INFO:aiogram.event:Update id=217887268 is handled. Duration 3858 ms by bot id=7511166749
+INFO:aiogram.event:Update id=217887269 is not handled. Duration 14 ms by bot id=7511166749
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:root:Checking subscription for channel: -1002477323800
+INFO:root:Checking subscription for channel: -1002155123541
+INFO:root:Checking subscription for channel: -1002419696199
+INFO:root:Checking subscription for channel: -1002287769696
+INFO:aiogram.event:Update id=217887270 is handled. Duration 5500 ms by bot id=7511166749
+INFO:aiogram.event:Update id=217887271 is not handled. Duration 0 ms by bot id=7511166749
+INFO:root:Checking subscription for channel: -1002488020788
+INFO:root:Checking subscription for channel: -1002477323800
+INFO:root:Checking subscription for channel: -1002155123541
+INFO:root:Checking subscription for channel: -1002419696199
+INFO:root:Checking subscription for channel: -1002287769696
+INFO:aiogram.event:Update id=217887272 is handled. Duration 4891 ms by bot id=7511166749

@@ -228,7 +228,7 @@ async def admin_panel(message: Message):
     await message.answer("Admin panel:", reply_markup=keyboard)
 
 
-@dp.callback_query(lambda c: c.data == 'add_channel')
+@dp.callback_query(lambda c: c.data == 'add_movie')
 async def add_movie_start(message: Message):
     user_id = message.from_user.id
     if user_id not in ADMINS:

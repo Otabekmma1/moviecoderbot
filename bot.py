@@ -237,33 +237,57 @@ async def add_movie_start(message: Message):
     user_states[message.from_user.id] = {'state': 'adding_movie', 'step': 'title'}
     await message.answer("Kino nomini yuboring.", reply_markup=only_back_keyboard())
 
+# State dictionary to track user actions
+
 @dp.callback_query(lambda c: c.data == 'send_message')
-async def send_message(callback_query: CallbackQuery):
+async def send_message_prompt(callback_query: CallbackQuery):
+    """Handler for the 'send_message' button - prompts admin to send a message."""
     await callback_query.message.answer("Xabar yuborish uchun xabar matnini yuboring (text, file, MP4, MP3).")
     user_states[callback_query.from_user.id] = {'state': 'sending_message'}
 
-@dp.message(lambda m: m.text and user_states.get(m.from_user.id, {}).get('state') == 'sending_message')
-async def send_message(message: Message):
+
+@dp.message(lambda m: user_states.get(m.from_user.id, {}).get('state') == 'sending_message')
+async def handle_send_message(message: Message):
+    """Handler for processing the message content after the admin sends a message."""
     user_id = message.from_user.id
+
+    # Check subscription before proceeding
     if not await ensure_subscription(message):
         return
 
-    # Xabar yuborish
-    text = message.text
+    # Fetch the text or file content to send
+    text = message.text  # You can extend this to handle files or other media types if needed
 
+    # Fetch the list of users from the API
     async with aiohttp.ClientSession() as session:
-        # Foydalanuvchilarning ro'yxatini olish
         async with session.get('https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/users/') as response:
+            if response.status != 200:
+                await message.answer("Foydalanuvchilarni olishda xatolik yuz berdi!")
+                return
+
             users = await response.json()
 
-        for user in users:
-            user_id = user['telegram_id']
-            try:
-                await bot.send_message(user_id, text)
-            except Exception as e:
-                logging.error(f"Xabar yuborishda xatolik: {e}")
+    # Send the message to each user
+    sent_count = 0
+    failed_count = 0
 
-    await message.answer("Xabar barcha foydalanuvchilarga yuborildi!")
+    for user in users:
+        user_telegram_id = user['telegram_id']
+        try:
+            await bot.send_message(user_telegram_id, text)
+            sent_count += 1
+        except Exception as e:
+            logging.error(f"Xabar yuborishda xatolik {user_telegram_id} ga: {e}")
+            failed_count += 1
+
+    # Send confirmation message to the admin
+    await message.answer(
+        f"Xabar yuborildi:\n"
+        f"✅ Muvaffaqiyatli: {sent_count} foydalanuvchi\n"
+        f"❌ Xatoliklar: {failed_count} foydalanuvchi"
+    )
+
+    # Reset the state for this user
     user_states[user_id] = {'state': 'searching_movie'}
 
 

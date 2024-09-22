@@ -248,15 +248,12 @@ async def send_message_prompt(callback_query: CallbackQuery):
 
 @dp.message(lambda m: user_states.get(m.from_user.id, {}).get('state') == 'sending_message')
 async def handle_send_message(message: Message):
-    """Handler for processing the message content after the admin sends a message."""
+    """Handler for processing any type of content after the admin sends a message."""
     user_id = message.from_user.id
 
     # Check subscription before proceeding
     if not await ensure_subscription(message):
         return
-
-    # Fetch the text or file content to send
-    text = message.text  # You can extend this to handle files or other media types if needed
 
     # Fetch the list of users from the API
     async with aiohttp.ClientSession() as session:
@@ -264,7 +261,6 @@ async def handle_send_message(message: Message):
             if response.status != 200:
                 await message.answer("Foydalanuvchilarni olishda xatolik yuz berdi!")
                 return
-
             users = await response.json()
 
     # Send the message to each user
@@ -274,7 +270,8 @@ async def handle_send_message(message: Message):
     for user in users:
         user_telegram_id = user['telegram_id']
         try:
-            await bot.send_message(user_telegram_id, text)
+            # Forward the message as is to each user
+            await bot.copy_message(user_telegram_id, from_chat_id=message.chat.id, message_id=message.message_id)
             sent_count += 1
         except Exception as e:
             logging.error(f"Xabar yuborishda xatolik {user_telegram_id} ga: {e}")
@@ -289,7 +286,6 @@ async def handle_send_message(message: Message):
 
     # Reset the state for this user
     user_states[user_id] = {'state': 'searching_movie'}
-
 
 @dp.callback_query(lambda c: c.data == 'stats')
 async def stats(callback_query: CallbackQuery):

@@ -1,3 +1,6 @@
+
+
+
 import asyncio
 import logging
 import aiohttp
@@ -7,7 +10,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import  Message, InlineKeyboardMarkup, InlineKeyboardButton, \
     CallbackQuery, ReplyKeyboardMarkup, KeyboardButton
 
-TOKEN = "7511166749:AAF08oX2S5yxA65-4HTQffSfPiXWVgd8VHs"
+TOKEN = "7300663714:AAHPky3j3vvLSTGmbiKtzMvtbQ01Wx8i5q0"
 ADMINS = [5541564692]
 
 bot = Bot(token=TOKEN)
@@ -189,14 +192,12 @@ async def command_start_handler(message: Message, first_name: str):
     if await check_subscription(user_id):
         is_admin = user_id in ADMINS
 
-        # Admin uchun tugmalarni yaratamiz
         admin_buttons = []
         if is_admin:
             admin_buttons = [
-                [KeyboardButton(text="➕ Kino qo'shish")],
+                [KeyboardButton(text="🛠 Admin Panel")]
             ]
 
-        # Asosiy keyboard
         keyboard = ReplyKeyboardMarkup(
             keyboard=[
                 [KeyboardButton(text="🤖 Telegram bot yasatish")],
@@ -205,11 +206,29 @@ async def command_start_handler(message: Message, first_name: str):
             resize_keyboard=True
         )
         user_states[user_id] = {'state': 'searching_movie'}
-        await message.answer(f"<b>👋Salom {first_name}</b>\n\n<i>Kino kodini kiriting...</i>", reply_markup=keyboard, parse_mode='html')
+        await message.answer(f"<b>👋Salom {first_name}</b>\n\n<i>Kino kodini kiriting...</i>", reply_markup=keyboard,
+                             parse_mode='html')
     else:
         await send_subscription_prompt(message)
 
-@dp.message(lambda message: message.text == "➕ Kino qo'shish")
+
+
+@dp.message(lambda message: message.text == "🛠 Admin Panel")
+async def admin_panel(message: Message):
+    user_id = message.from_user.id
+    if user_id not in ADMINS:
+        await message.answer("Sizda admin panelga kirish huquqi mavjud emas.")
+        return
+
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="➕ Kino qo'shish", callback_data='add_movie')],
+        [InlineKeyboardButton(text="📣 Xabar yuborish", callback_data='send_message')],
+        [InlineKeyboardButton(text="📊 Statistika", callback_data='stats')],
+    ])
+    await message.answer("Admin panel:", reply_markup=keyboard)
+
+
+@dp.callback_query(lambda c: c.data == 'add_channel')
 async def add_movie_start(message: Message):
     user_id = message.from_user.id
     if user_id not in ADMINS:
@@ -217,6 +236,70 @@ async def add_movie_start(message: Message):
         return
     user_states[message.from_user.id] = {'state': 'adding_movie', 'step': 'title'}
     await message.answer("Kino nomini yuboring.", reply_markup=only_back_keyboard())
+
+@dp.callback_query(lambda c: c.data == 'send_message')
+async def send_message(callback_query: CallbackQuery):
+    await callback_query.message.answer("Xabar yuborish uchun xabar matnini yuboring (text, file, MP4, MP3).")
+    user_states[callback_query.from_user.id] = {'state': 'sending_message'}
+
+@dp.message(lambda m: m.text and user_states.get(m.from_user.id, {}).get('state') == 'sending_message')
+async def send_message(message: Message):
+    user_id = message.from_user.id
+    if not await ensure_subscription(message):
+        return
+
+    # Xabar yuborish
+    text = message.text
+
+    async with aiohttp.ClientSession() as session:
+        # Foydalanuvchilarning ro'yxatini olish
+        async with session.get('https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/users/') as response:
+            users = await response.json()
+
+        for user in users:
+            user_id = user['telegram_id']
+            try:
+                await bot.send_message(user_id, text)
+            except Exception as e:
+                logging.error(f"Xabar yuborishda xatolik: {e}")
+
+    await message.answer("Xabar barcha foydalanuvchilarga yuborildi!")
+    user_states[user_id] = {'state': 'searching_movie'}
+
+
+@dp.callback_query(lambda c: c.data == 'stats')
+async def stats(callback_query: CallbackQuery):
+    user_id = callback_query.from_user.id
+    if not await ensure_subscription(callback_query.message):
+        return
+
+    # Statistika olish (har bir API'dan alohida)
+    async with aiohttp.ClientSession() as session:
+        async with session.get(
+                'https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/users/') as users_response:
+            users_data = await users_response.json()
+            total_users = len(users_data)  # Assuming the API returns a list of users
+
+        async with session.get(
+                'https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/channels/') as channels_response:
+            channels_data = await channels_response.json()
+            total_channels = len(channels_data)  # Assuming the API returns a list of channels
+
+        async with session.get(
+                'https://protected-wave-24975-ac981f81033d.herokuapp.com/api/v1/movies/') as movies_response:
+            movies_data = await movies_response.json()
+            total_movies = len(movies_data)  # Assuming the API returns a list of movies
+
+    # Statistika xabarini yaratish
+    stats_message = (
+        f"📊 Statistika:\n"
+        f"• Kanallar: {total_channels}\n"
+        f"• Filmlar: {total_movies}\n"
+        f"• Foydalanuvchilar: {total_users}\n"
+    )
+
+    await callback_query.message.answer(stats_message)
+
 
 @dp.message(lambda message: message.text == "🤖 Telegram bot yasatish")
 async def telegram_service_request(message: Message):
@@ -359,3 +442,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

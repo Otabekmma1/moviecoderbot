@@ -396,3 +396,15 @@ INFO:root:Checking subscription for channel: -1002155123541
 INFO:root:Checking subscription for channel: -1002419696199
 INFO:root:Checking subscription for channel: -1002287769696
 INFO:aiogram.event:Update id=217887272 is handled. Duration 4891 ms by bot id=7511166749
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @codermoviebot id=7511166749 - 'CoderMovieBot'
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.262594 seconds and try again... (tryings = 1, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.686784 seconds and try again... (tryings = 2, bot id = 7511166749)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 2.212832 seconds and try again... (tryings = 3, bot id = 7511166749)
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @codermoviebot id=7511166749 - 'CoderMovieBot'

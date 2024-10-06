@@ -10,7 +10,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import  Message, InlineKeyboardMarkup, InlineKeyboardButton, \
     CallbackQuery, ReplyKeyboardMarkup, KeyboardButton
 
-TOKEN = "7511166749:AAEeEAYIraX-VHhWZa1EYxuPqXeJ195IZO0"
+TOKEN = "7511166749:AAFpmGAOmBHSKf6UPaT1cLIGmwv6sNMoi_I"
 ADMINS = [5541564692]
 
 bot = Bot(token=TOKEN)
